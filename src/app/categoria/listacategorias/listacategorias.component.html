@@ -1,3 +1,9 @@
+<mat-card>
+  <mat-toolbar>
+    <span>
+    Lista Categorias
+    </span>
+  </mat-toolbar>
 <table mat-table [dataSource]="categoria" class="mat-elevation-z8 demo-table">
   <!-- Position Column -->
   <ng-container matColumnDef="id">
@@ -15,4 +21,4 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
-
+</mat-card>
